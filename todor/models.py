@@ -14,3 +14,26 @@ class User(db.Model):
     # Obtener datos
     def __repr__(self):
         return f'<User: {self.username}>' 
+    
+
+
+# Creación del modelo del usuario
+class Todo(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    create_by = db.Column(db.Integer, db.Foreignkey('user.id'), nullable=False)# Se crea relacion con el usuario
+    title = db.Column(db.String(100), nullable=False)
+    desc = db.Column(db.Text)
+    state= db.Column(db.boolean, default=False)
+
+    # Constructor del modelo
+    def __init__(self, create_by, title, desc, state=False):
+        self.create_by=create_by
+        self.title=title
+        self.desc=desc
+        self.state=state
+        
+
+
+    # Obtener datos
+    def __repr__(self):
+        return f'<Todo: {self.title}>' 
