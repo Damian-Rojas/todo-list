@@ -20,14 +20,14 @@ class User(db.Model):
 # Creación del modelo del usuario
 class Todo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    create_by = db.Column(db.Integer, db.Foreignkey('user.id'), nullable=False)# Se crea relacion con el usuario
+    created_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)# Se crea relacion con el usuario
     title = db.Column(db.String(100), nullable=False)
     desc = db.Column(db.Text)
-    state= db.Column(db.boolean, default=False)
+    state= db.Column(db.Boolean, default=False)
 
     # Constructor del modelo
-    def __init__(self, create_by, title, desc, state=False):
-        self.create_by=create_by
+    def __init__(self, created_by, title, desc, state=False):
+        self.created_by=created_by
         self.title=title
         self.desc=desc
         self.state=state
