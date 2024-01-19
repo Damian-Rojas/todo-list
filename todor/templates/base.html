@@ -30,6 +30,26 @@
 
     {% block content %}
     {% endblock %}
+
+    <!-- Se captura el mensaje de error que viene de flash-->
+    {% for massage in get_flashed_messages() %}
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="alert alert-danger" role="alert">
+              {{massage}}
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    {%endfor%}
+
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
