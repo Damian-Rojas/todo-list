@@ -1,6 +1,8 @@
 from flask import (
-   Blueprint, render_template, request, url_for, redirect, flash
+   Blueprint, render_template, request, url_for, redirect, flash, session, g 
 )
+# Objeto G, puede servir para guardar algun valor como por ejemplo las cookies
+
 
 # Para generar y chequear los password
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -33,6 +35,29 @@ def register():
     return render_template('auth/register.html')
 
 
-@bp.route('login/')
+@bp.route('login/', methods=('GET','POST'))
 def login():
-     return render_template('auth/login.html')
+        if request.method=='POST':
+            username=request.form['username']
+            password=request.form['password']
+
+            error=None
+
+            #Validar datos
+            user=User.query.filter_by(username=username).first()
+            if user==None:
+                 error='Nombre de ussuario incorrecto'
+            elif not check_password_hash(user.password, password):
+                 error='Contraseña incorrecta'
+                 
+            # Iniciar sesion
+            if error is None:
+                session.clear() # Limpia sesion
+                session['user_id']=user.id
+                db.session.commit()
+                return  redirect(url_for('todo.index'))
+    
+            flash(error)
+
+
+        return render_template('auth/login.html')
