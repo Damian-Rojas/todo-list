@@ -53,8 +53,7 @@ def login():
             # Iniciar sesion
             if error is None:
                 session.clear() # Limpia sesion
-                session['user_id']=user.id
-                db.session.commit()
+                session['user_id']=user.id # Se guarda en la clave de la sesion la el Id del usuario
                 return  redirect(url_for('todo.index'))
     
             flash(error)
