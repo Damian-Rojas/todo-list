@@ -76,6 +76,18 @@ def load_logged_in_used():
 def logout():
      session.clear()
      return redirect(url_for('index'))
+
+
+import functools
+# Funcion decoradora para inicio de sesion, sino tiene inicio de sesion a autenticación del usuario
+def login_required(view):
+    @functools.wraps(view)
+    def wraps_view(** kwargs):
+         if g.user is None:
+              return redirect(url_for('auth.login'))
+         return view(**kwargs)
+    return wraps_view
+
      
      
      
