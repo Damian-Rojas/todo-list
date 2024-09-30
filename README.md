@@ -32,9 +32,9 @@
 
 
 <h3 align="left">Descripción del Proyecto </h3>
-ToDo List es una aplicación que sirve para llevar un registro de las tareas y tener una vista general de tus responsabilidades. 
-La aplicación permite registrar un usuario nuevo o iniciar sesión con uno ya existente. 
-En el se pueden registrar nuevas tareas, visualizar tareas, ver sus estados, editarlas y también eliminarlas si se desea.
+La aplicación permite llevar un registro de las tareas y tener una vista general de tus responsabilidades. 
+En la misma se puede registrar un usuario nuevo o iniciar sesión con uno ya existente. 
+Entre sus funciones m{as importatntes permite registrar nuevas tareas, visualizarlas, ver sus estados, editarlas y también eliminarlas si se desea.
 En la pantalla inicial de bienvenida se encuentra la opción de Iniciar Sesión y Registrarse. 
 En la pantalla principal se pueden observar todas las tareas del usuario registrado y sus estados donde también se encuentran las opciones para editar, eliminar y crear las nuevas tareas.
 
