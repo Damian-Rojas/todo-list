@@ -38,7 +38,7 @@ Entre sus funciones m{as importatntes permite registrar nuevas tareas, visualiza
 En la pantalla inicial de bienvenida se encuentra la opción de Iniciar Sesión y Registrarse. 
 En la pantalla principal se pueden observar todas las tareas del usuario registrado y sus estados donde también se encuentran las opciones para editar, eliminar y crear las nuevas tareas.
 
-file:///home/damian/Escritorio/Mis_Proyectos/Todo-list/imagenes-github/todoList.png
+[file:///home/damian/Escritorio/Mis_Proyectos/Todo-list/imagenes-github/todoList.png](https://github.com/DamianRojas79/ToDo-List/tree/main/images-git)
 
 
   ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
