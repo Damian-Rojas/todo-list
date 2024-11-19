@@ -32,7 +32,7 @@
 Todolist es una aplicación que permite llevar un registro de tus tareas y tener una vista general de tus responsabilidades. <br><br>
 
  
-![image alt](https://github.com/DamianRojas79/ToDo-List/blob/1a5a2aab3c31a5b08d0e147af569eaa888059de9/images-git/todoList.png)
+![image alt](https://github.com/DamianRojas79/ToDo-List/blob/main/images-git/Imagen%20pegada.png)
 
   
   
