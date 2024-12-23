@@ -1,5 +1,8 @@
 ## ToDo List
 
+ 
+![image alt](https://github.com/DamianRojas79/ToDo-List/blob/main/images-git/Imagen%20pegada.png)
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)![Static Badge](https://img.shields.io/badge/Date_Release-Junio-orange)![Static Badge](https://img.shields.io/badge/ToDo_List-%20V1.0.0-blue)
 
 ## Índice
@@ -29,10 +32,9 @@
   
 ## Descripción del Proyecto
 
-Todolist es una aplicación que permite llevar un registro de tus tareas y tener una vista general de tus responsabilidades. <br><br>
+Todolist es una aplicación que permite llevar un registro de tus tareas y tener una vista general de tus responsabilidades para poder organizarte mejor. <br><br>
 
- 
-![image alt](https://github.com/DamianRojas79/ToDo-List/blob/main/images-git/Imagen%20pegada.png)
+
 
   
   
